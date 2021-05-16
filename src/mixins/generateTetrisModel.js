@@ -75,7 +75,7 @@ export default {
           return false;
       }
 
-      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'brown darken-1' };
+      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'brown darken-2' };
     },
     generateModelL1(mainSw, rotationState) {
       let secondSw, thirdSw, fourthSw;
@@ -105,7 +105,7 @@ export default {
           return false;
       }
 
-      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'green darken-1' };
+      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'green darken-2' };
     },
     generateModelL2(mainSw, rotationState) {
       let secondSw, thirdSw, fourthSw;
@@ -135,7 +135,7 @@ export default {
           return false;
       }
 
-      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'light-blue darken-1' };
+      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'light-blue darken-2' };
     },
     generateModelLine(mainSw, rotationState) {
       let secondSw, thirdSw, fourthSw;
@@ -155,14 +155,14 @@ export default {
           return false;
       }
 
-      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'indigo darken-1' };
+      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'indigo darken-2' };
     },
     generateModelBox(mainSw) {
       const secondSw = this.items.find(item => item.row === mainSw.row && item.col === mainSw.col + 1);
       const thirdSw = this.items.find(item => item.row === mainSw.row + 1 && item.col === mainSw.col);
       const fourthSw = this.items.find(item => item.row === mainSw.row + 1 && item.col === mainSw.col + 1);
 
-      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'orange' };
+      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'orange darken-2' };
     },
     generateModelZ1(mainSw, rotationState) {
       let secondSw, thirdSw, fourthSw;
@@ -182,7 +182,7 @@ export default {
           return false;
       }
 
-      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'teal darken-1' };
+      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'teal darken-2' };
     },
     generateModelZ2(mainSw, rotationState) {
       let secondSw, thirdSw, fourthSw;
@@ -202,7 +202,7 @@ export default {
           return false;
       }
 
-      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'amber darken-1' };
+      return { switches: [mainSw, secondSw, thirdSw, fourthSw], color: 'amber darken-2' };
     },
     paintSelectedKeys(result) {
       this.currentTetrisModel.switches = result.switches.map((sw) => {
